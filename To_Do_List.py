@@ -11,8 +11,7 @@ data_file = "tache.json"
 def sauvegarder_tache():
     taches = List_Box.get(0, tk.END)
     with open(data_file, "w") as f:
-        json.dump(taches, f, indent= 4)
-
+        json.dump(taches,f, indent=4)
 def charger_tache():
     with open(data_file, 'r') as f:
         try:
